@@ -117,8 +117,9 @@ h2{
     border: none; 
     border-radius: 6px; 
     cursor: pointer; 
-    background: #0077cc; 
+    background: #003458; 
     color: white; 
+    font-size: 15px;
 }
     button:hover { 
         background: #005fa3;
