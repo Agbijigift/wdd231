@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 | Gift Agbiji</title>
+    <meta name="author" content="Gift Agbiji">
+    <meta name="description" content="Gift Agbiji home page for wdd 231 course">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <header>
+        <img src="images/site-logo.webp" alt="site-logo">
+        <span>Gift Agbiji</span>
+        <button id="ham-btn" class="hamburger"></button>
+
+    </header>
+    <nav id="nav-bar" class="navigation">
+  <ul>
+    <li class="current"><a href="index.html">Home</a></li>
+    <li><a href="#">Chamber</a></li>
+    <li><a href="#">Final</a></li>
+  </ul>
+</nav>
+          
+
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About me</h2>
+            <p>Hi, my name is Gift. I’m a student and an author, but most importantly, I’m passionate about coding. I spend a lot of my time learning and experimenting with web development, especially HTML, CSS, and JavaScript. I enjoy taking complex coding concepts and breaking them down into simple, easy-to-understand steps.
+               Writing gives me the chance to share this passion with others. I focus on creating beginner-friendly guides and resources that make coding approachable and enjoyable. My goal is to encourage others who are just starting out, showing them that coding doesn’t have to feel overwhelming, it can actually be fun and empowering.
+              Beyond coding and writing. For me, coding isn’t just about technology, it’s about creativity, problem-solving, and building a future I believe in.</p>
+        </section>
+        <section class="pro-sec">
+            <h2>Gift Agbiji</h2>
+            <div class="profile"><img src="images/profile.webp" alt="Gift Agbiji"></div>
+        </section>
+        <section class="course-sec">
+            <h2>Web certificate courses</h2>
+            <div class="course-btns">
+                <button id="all-btn">All courses</button>
+                <button id="wdd-btn">WDD courses</button>
+                <button id="cse-btn">CSE courses</button>
+
+            </div>
+             <p id="stats"></p>
+
+  
+              <div id="courseContainer"></div>
+        </section>
+        
+
+    </main> 
+    
+
+    <footer>
+        <div class="social">
+            <a href=""><img src="images/githup.svg" alt="githup"></a>
+            <a href=""><img src="images/linkedin.svg" alt="linkedin"></a>
+            <a href=""><img src="images/twitter.svg" alt="twitter"></a>
+            
+        </div>
+        <span id="currentyear"></span>
+        <p id="lastmodified"></p>
+
+
+    </footer>
     
 </body>
 </html>

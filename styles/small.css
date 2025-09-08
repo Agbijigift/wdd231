@@ -1,0 +1,199 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/*********************************************header ********************************************************/
+header{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: 1px solid #ddd;
+    column-gap: 8px;
+}
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span{
+    font-size: 1.2rem;
+}
+
+/********************************************* hamburger  ********************************************************/
+.hamburger{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.hamburger::before{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/********************************************* navigation ********************************************************/
+.navigation{
+    display: none;
+
+}
+.navigation.show{
+    display: block;
+
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a{
+    display: block;
+    padding: .8rem 10px; 
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+.navigation li.current{
+    background-color: #eee;
+}
+.navigation a:hover{
+    background-color: rgb(80, 80, 153);
+}
+
+
+/********************************************* About/ profil section********************************************************/
+h1{
+    padding-left: 10px;
+
+}
+h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.about p{
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.profile{
+    display: flex;
+     align-items: center;
+    justify-content: center;
+   
+
+}
+.pro-sec{
+     background-color: #eee;
+
+}
+.profile img{
+    width: 200px;
+    height: auto;
+   
+}
+
+/********************************************* course********************************************************/
+.course-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.course-btns button { 
+    margin: 5px; 
+    padding: 8px 14px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    background: #0077cc; 
+    color: white; 
+}
+    button:hover { 
+        background: #005fa3;
+     }
+    .course { 
+        width: 100%;
+        height: auto;
+        margin: 10px 0; 
+        padding: 12px; 
+        border: 1px solid #ddd; 
+        border-radius: 8px; 
+        background: #fff; 
+        display: block;
+    }
+    #courseContainer{
+        padding: 10px;
+
+    }
+        
+    .course h3 { 
+        margin: 0 0 5px; 
+        text-align: center;
+    }
+    .completed { 
+        border-left: 6px solid green; 
+        background: #e8f9e8; 
+    }
+    .incomplete { 
+        border-left: 6px solid orange; 
+        background: #fff8e1; 
+    }
+    .tech { 
+        font-size: 0.9em; 
+        color: #555; 
+    }
+    #stats {
+        text-align: center;
+        margin: 15px 0; 
+        font-weight: bold; 
+    }
+
+
+/********************************************* footer********************************************************/
+footer{
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+#lastmodified{
+    color: blue;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    
+}
+
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+   
+
+}
+.social img{
+    width: 30px;
+    height: 30px;
+}
+.social a:hover{
+    background-color: #ddd;
+}
