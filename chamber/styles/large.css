@@ -1,0 +1,58 @@
+@media (min-width: 608px){
+    *{
+    box-sizing: border-box;
+}
+    header,main,nav,footer{
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    header{
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+    }
+    .social{
+        
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+      .navigation{
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation a{
+        border: none;
+    }
+    nav{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 20px  20px  20px 100px;
+        gap: 20px;
+    }
+        .hamburger{
+        display: none;
+    }
+    .logo{
+        width: 300px;
+        height: auto;
+    }
+     .list-row {
+    padding: 12px;
+  }
+
+  .list-cell {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .list-header {
+    font-size: 18px;
+  }
+
+ 
+}

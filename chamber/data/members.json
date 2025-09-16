@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Cally Air",
+    "address": "Margaret Ekpo International Airport, Calabar, Cross River, Nigeria",
+    "phone": "+234-802-123-4567",
+    "website": "https://callyair.com",
+    "icon": "images/cally-air.webp",
+    "membership_level": 3,
+    "category": "Aviation",
+    "founded": 2021
+  },
+  {
+    "name": "MTN Nigeria",
+    "address": "Falomo Roundabout, Ikoyi, Calabar, Nigeria",
+    "phone": "+234-803-200-0000",
+    "website": "https://mtn.ng",
+    "icon": "images/mtn.webp",
+    "membership_level": 3,
+    "category": "Telecommunications",
+    "slogan": "Everywhere you go"
+  },
+  {
+    "name": "Metropolitan Hotel Calabar",
+    "address": "MCC Road, Calabar, Cross River, Nigeria",
+    "phone": "+234-806-555-4321",
+    "website": "https://metropolitanhotelcalabar.com",
+    "icon": "images/metropolitant-hotel.webp",
+    "membership_level": 2,
+    "category": "Hospitality",
+    "rating": "4-Star Hotel"
+  },
+  {
+    "name": "Port Harcourt Electricity Distribution (PHED)",
+    "address": "No. 1 Moscow Road, Port Harcourt, Rivers State, Nigeria",
+    "phone": "+234-84-700-000",
+    "website": "https://phed.com.ng",
+    "icon": "images/nepa.webp",
+    "membership_level": 2,
+    "category": "Electricity Distribution",
+    "coverage": "South-South Nigeria"
+  },
+  {
+    "name": "Nugi Technologies",
+    "address": "Etta Agbor Road, Calabar, Cross River, Nigeria",
+    "phone": "+234-809-111-2222",
+    "website": "https://nugitech.com",
+    "icon": "images/nugi-tech.webp",
+    "membership_level": 1,
+    "category": "Technology Solutions",
+    "services": ["Software Development", "IT Consulting", "Web Solutions"]
+  },
+  {
+    "name": "GTBank (Guaranty Trust Bank)",
+    "address": "Plot 635, Akin Adesola Street, Victoria Island, Calabar, Nigeria",
+    "phone": "+234-700-482-666328",
+    "website": "https://gtbank.com",
+    "icon": "images/gtbank.webp",
+    "membership_level": 3,
+    "category": "Banking & Financial Services",
+    "founded": 1990
+  },
+  {
+    "name": "Dangote Group",
+    "address": "Union Marble House, 1 Alfred Rewane Road, Ikoyi, Calabar, Nigeria",
+    "phone": "+234-1-448-0815",
+    "website": "https://dangote.com",
+    "icon": "images/dangote.webp",
+    "membership_level": 3,
+    "category": "Manufacturing & Conglomerate",
+    "key_products": ["Cement", "Sugar", "Salt", "Flour"]
+  }
+]

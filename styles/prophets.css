@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+header, main, footer{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#cards{
+    
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+section{
+    background-color: rgb(219, 214, 214);
+    margin: 0.5rem;
+	padding: 0.5rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    
+}
+section p{
+    margin: 0;
+    padding: 0;
+}
+section img{
+    	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+}
+h2, h1{
+    text-align: center;
+    color: rgb(57, 57, 124);
+}
+h1{
+    font-size: 50px;
+}
+footer{
+    text-align: center;
+    background-color: rgb(57, 57, 124);
+    
+}
+footer p{
+    color: white;
+    padding: 30px;
+}

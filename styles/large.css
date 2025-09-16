@@ -10,7 +10,7 @@
     .hamburger{
         display: none;
     }
-    .navigation{
+   .navigation{
         display: block;
         border-bottom: 1px solid #eee;
     }
@@ -19,7 +19,7 @@
     }
     .navigation a{
         border: none;
-    }
+    } 
 
         .course { 
         width: 300px;
