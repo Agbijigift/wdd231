@@ -17,6 +17,9 @@
         align-items: center;
         gap: 20px;
     }
+    .social button{
+    padding: 10px;
+}
       .navigation{
         display: block;
         border-bottom: 1px solid #eee;

@@ -16,13 +16,13 @@ nav{
 .social{
    padding-left: 40px;
    display: flex;
-   gap: 30px;
+   gap: 20px;
    
 }
 .social button{
     
    
-    padding: 8px;
+    padding: 6px;
     border: none;
     border-radius: 6px;
     background-color: rgb(13, 13, 90);
