@@ -224,7 +224,7 @@ footer{
   text-align: center;
   font-size: 15px;
   max-width: 70%;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.60s ease-in-out;
 }
 #event-overlay a{
   text-decoration: none;
