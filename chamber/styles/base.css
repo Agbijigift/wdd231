@@ -115,6 +115,7 @@ h2{
 
 }
 
+
 .card {
   background: #fafafa;
   padding: 15px;
@@ -213,19 +214,33 @@ footer{
 
 #event-overlay {
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 50%;
   height: auto;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.6); 
   color: white;
-  padding: 15px;
+  padding: 5px;
   border-radius: 10px;
   text-align: center;
   font-size: 15px;
   max-width: 70%;
   transition: opacity 0.60s ease-in-out;
 }
+.hero h1{
+    position: absolute;
+  top: 0;
+  left: 150px;
+  height: auto;
+  transform: translateX(-50%);
+  background:  rgb(17, 73, 17); 
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
 #event-overlay a{
   text-decoration: none;
   background: rgb(17, 73, 17);
