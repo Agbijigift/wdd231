@@ -14,12 +14,14 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <script src="../scripts/getdates.js" defer></script>
-    <script src="scripts/nav.js" defer></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    
     <title>Cross River State Chamber of Commerce</title>
 </head>
 <body>
@@ -46,15 +48,62 @@
         <li><a href="#">Discover</a></ul></li>
     </nav>
     <main>
-        <h2>Member Directory</h2>
-    <div class="view-toggle">
-      <button id="gridView">Grid View</button>
-      <button id="listView">List View</button>
-    </div>
-    <div id="directory" class="grid list"></div>
-    
+        <section class="hero">
+  <img src="images/hero-img.webp" alt="hero image">
+  <div id="event-overlay">
+    <h3 id="event-title"></h3>
+    <p id="event-date"></p>
+    <p id="event-location"></p>
+    <a id="event-link" href="#" target="_blank">Learn More</a>
 
-        	
+  </div>
+</section>
+
+    <section class="event">
+       <section id="current-event">
+  <h2>Current Events</h2>
+  
+  <div id="events-list"></div>
+    </section>
+
+    <section class="weather">
+        
+        <div id="current-wheather">
+            <h2>Current weather</h2>
+            <div class="wea">
+            <div id="w-icon">
+
+            </div>
+            <div id="other-info"></div>
+        </div>
+
+        </div>
+        <div id="forecast">
+            <h2>Weather Forecast</h2>
+
+        </div>
+
+
+    </section>
+    <section id="spotlights">
+
+    </section>
+    <section class="activities">
+        <h2>EXPERIENCE YOUR LOCAL CHAMBER</h2>
+        <div class="acti">
+        <figure><div><a href="#"><img src="images/calender-icon.svg" alt="Activity"></a></div>
+        <figcaption>Upcoming Activity</figcaption>
+    </figure>
+            <figure><div><a href="directory.html"><img src="images/add-icon.svg" alt="member directory"> </a></div>
+        <figcaption>Member Directory</figcaption>
+    </figure>
+        <figure><div><a href="#"><img src="images/add-icon.svg" alt="Join chamber"></a></div>
+        <figcaption>Join Chamber</figcaption>
+    </figure>
+</div>
+    </section> 
+ </section>
+      	
     </main>
     <footer>
          <p id="currentyear"></p>

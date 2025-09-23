@@ -3,8 +3,10 @@
     box-sizing: border-box;
 }
     header,main,nav,footer{
-        max-width: 950px;
+        /* max-width: 950px; */
         margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     header{
         display: flex;
@@ -56,6 +58,54 @@
   .list-header {
     font-size: 18px;
   }
+  /************************************************ home page ****************************************************/
+  .event{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
+
+  }
+  .weather{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #current-event{
+    
+    grid-column: 1/3;
+    
+
+  }
+  #events-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    
+  }
+  
+  #spotlights{
+    grid-column: 1/6;
+
+  }
+  .activities{
+     grid-column: 1/6;
+
+  }
+  .acti{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #event-overlay {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  font-size: 20px;
+  max-width: 70%;
+ 
+}
  
 }
