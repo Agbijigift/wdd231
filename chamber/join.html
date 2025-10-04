@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gift Agbiji">
+    <meta name="description" content="Cross River State Chamber of Commerce - Empowering Businesses">
+    <meta property="og:title" content=" Cross River State Chamber of Commerce - Empowering Businesses">
+    <meta property="og:description" content="Join the State Chamber of Commerce to connect with business leaders, access resources, and drive economic growth across our state." />
+    <meta property="og:image" content="images/screenshot.png">
+    <meta property="og:url" content="https://agbijigift.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="State Chamber of Commerce">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="join.html" defer></script>
+    
+    <title>Cross River State Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.webp" alt="logo" >
+        <button id="ham-btn" class="hamburger"></button>
+         <div class="social">
+            <a href=""><img src="../images/githup.svg" alt="githup link"></a>
+            <a href=""><img src="../images/linkedin.svg" alt="linkedin"></a>
+            <a href=""><img src="../images/twitter.svg" alt="twitter"></a>
+            
+            <button>Join our Newsletter</button>
+        </div>
+        
+        
+        
+
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Discover</a></ul></li>
+    </nav>
+    <main>
+  <form method="get" action="thankyou.html">
+    <label for="firstName" title="Enter your first name">
+      First Name:
+      <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+    </label>
+
+    <label for="lastName" title="Enter your last name">
+      Last Name:
+      <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+    </label>
+
+    <label for="orgTitle" title="Enter your organizational title">
+      Organizational Title:
+      <input type="text" id="orgTitle" name="orgTitle" 
+             autocomplete="organization-title" 
+             pattern="[A-Za-z\\- ]{7,}" 
+             title="Only letters, hyphens, and spaces. Minimum 7 characters.">
+    </label>
+
+    <label for="email" title="Enter your email address">
+      Email:
+      <input type="email" id="email" name="email" placeholder="example@email.com" 
+             autocomplete="email" required>
+    </label>
+
+    <label for="mobile" title="Enter your mobile phone number">
+      Mobile Phone:
+      <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
+    </label>
+
+    <label for="organization" title="Enter your business or organization's name">
+      Organization Name:
+      <input type="text" id="organization" name="organization" autocomplete="organization" required>
+    </label>
+
+    <label for="membership" title="Select your membership level">
+      Membership Level:
+      <select id="membership" name="membership" required>
+        <option value="">Select Level</option>
+        <option value="NP">NP Membership</option>
+        <option value="Bronze">Bronze Membership</option>
+        <option value="Silver">Silver Membership</option>
+        <option value="Gold">Gold Membership</option>
+      </select>
+    </label>
+
+    <label for="description" title="Provide a description of your organization">
+      Organization Description:
+      <textarea id="description" name="description" rows="4"></textarea>
+    </label>
+<input type="hidden" id="timestampField" name="timestamp">
+  
+
+    <input type="submit" value="Submit Application">
+  </form>
+
+ 
+  <div class="membership-cards">
+    <div class="card np">
+      <h3>NP Membership</h3>
+      <p>No fee for nonprofits.</p>
+      <a href="#" onclick="openModal('modalNP')">More Info</a>
+    </div>
+    <div class="card bronze">
+      <h3>Bronze Membership</h3>
+      <a href="#" onclick="openModal('modalBronze')">More Info</a>
+    </div>
+    <div class="card silver">
+      <h3>Silver Membership</h3>
+      <a href="#" onclick="openModal('modalSilver')">More Info</a>
+    </div>
+    <div class="card gold">
+      <h3>Gold Membership</h3>
+      <a href="#" onclick="openModal('modalGold')">More Info</a>
+    </div>
+  </div>
+
+
+  <div id="modalNP" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalNP')">&times;</span>
+      <h2>NP Membership Benefits</h2>
+      <p>Free membership for nonprofits. Includes basic event participation.</p>
+    </div>
+  </div>
+  <div id="modalBronze" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalBronze')">&times;</span>
+      <h2>Bronze Membership Benefits</h2>
+      <p>Affordable option. Includes newsletters and limited advertising opportunities.</p>
+    </div>
+  </div>
+  <div id="modalSilver" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalSilver')">&times;</span>
+      <h2>Silver Membership Benefits</h2>
+      <p>Includes event discounts, training sessions, and spotlight ads.</p>
+    </div>
+  </div>
+  <div id="modalGold" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modalGold')">&times;</span>
+      <h2>Gold Membership Benefits</h2>
+      <p>All Silver benefits plus premium advertising and exclusive events.</p>
+    </div>
+  </div>
+
+      	
+    </main>
+    <footer>
+         <p id="currentyear"></p>
+        <p id="lastmodified"></p>
+
+    </footer>
+
+    
+</body>
+</html>

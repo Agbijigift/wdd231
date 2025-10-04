@@ -7,19 +7,23 @@
     <meta name="description" content="Cross River State Chamber of Commerce - Empowering Businesses">
     <meta property="og:title" content=" Cross River State Chamber of Commerce - Empowering Businesses">
     <meta property="og:description" content="Join the State Chamber of Commerce to connect with business leaders, access resources, and drive economic growth across our state." />
-    <meta property="og:image" content="images/chamber-preview.jpg">
-    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="images/screenshot.png">
+    <meta property="og:url" content="https://agbijigift.github.io/wdd231/chamber/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="State Chamber of Commerce">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <script src="../scripts/getdates.js" defer></script>
-    <script src="scripts/nav.js" defer></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+     <script src="scripts/join.js" defer></script>
+    
     <title>Cross River State Chamber of Commerce</title>
 </head>
 <body>
@@ -46,15 +50,22 @@
         <li><a href="#">Discover</a></ul></li>
     </nav>
     <main>
-        <h2>Member Directory</h2>
-    <div class="view-toggle">
-      <button id="gridView">Grid View</button>
-      <button id="listView">List View</button>
-    </div>
-    <div id="directory" class="grid list"></div>
+         <div class="thankyou-box">
+    <h1>Thank You!</h1>
+    <p>Your membership application has been submitted successfully.</p>
+    <h2>Submitted Information</h2>
+    <div class="field"><span>First Name:</span> <span id="firstName"></span></div>
+    <div class="field"><span>Last Name:</span> <span id="lastName"></span></div>
+    <div class="field"><span>Email:</span> <span id="email"></span></div>
+    <div class="field"><span>Mobile:</span> <span id="mobile"></span></div>
+    <div class="field"><span>Organization Name:</span> <span id="organization"></span></div>
+    <div class="field"><span>Timestamp:</span> <span id="timestampDisplay"></span></div>
     
+  </div>
 
-        	
+
+
+      	
     </main>
     <footer>
          <p id="currentyear"></p>

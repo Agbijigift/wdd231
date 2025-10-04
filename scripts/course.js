@@ -81,33 +81,50 @@ const courses = [
 const container = document.getElementById("courseContainer");
 const stats = document.getElementById("stats");
 
-
 function displayCourses(courseArray) {
-  container.innerHTML = ""; 
-
+  container.innerHTML = "";
 
   let totalCredits = courseArray.reduce((sum, course) => sum + course.credits, 0);
   stats.textContent = `Showing ${courseArray.length} course(s) — Total Credits: ${totalCredits}`;
 
-  
   courseArray.forEach(course => {
     let div = document.createElement("div");
     div.classList.add("course");
     div.classList.add(course.completed ? "completed" : "incomplete");
 
-    div.innerHTML = `
-      <h3>${course.subject} ${course.number}</h3>
-     
-    `;
+    div.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+
+    // FIX: open details when clicking a course
+    div.addEventListener("click", () => displayCourseDetails(course));
 
     container.appendChild(div);
   });
 }
 
+function displayCourseDetails(course) {
+  const courseDetails = document.querySelector("#course-details");
 
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+
+  courseDetails.showModal();
+
+  // FIX: prevent multiple stacked event listeners
+  const closeModal = document.querySelector("#closeModal");
+  closeModal.onclick = () => courseDetails.close();
+}
+
+// Initial display
 displayCourses(courses);
 
-
+// Filter buttons
 document.getElementById("all-btn").addEventListener("click", () => {
   displayCourses(courses);
 });
@@ -121,4 +138,3 @@ document.getElementById("cse-btn").addEventListener("click", () => {
   let cseCourses = courses.filter(course => course.subject === "CSE");
   displayCourses(cseCourses);
 });
-

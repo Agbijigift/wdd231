@@ -1,0 +1,21 @@
+main {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background: #f4f4f9;
+    }
+    .thankyou-box {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      background: #fff;
+    }
+    h1 { color: #2e7d32; }
+    p { font-size: 1.1rem; }
+    .field {
+      margin: 10px 0;
+    }
+    .field span {
+      font-weight: bold;
+    }
