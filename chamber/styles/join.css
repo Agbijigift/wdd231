@@ -5,6 +5,12 @@ main {
       flex-wrap: wrap;
       gap: 20px;
     }
+    .join-h1{
+      text-align: center;
+      font-size: larger;
+      border-bottom: 2px solid gray;
+    
+    }
     form {
       flex: 1 1 400px;
       display: flex;
