@@ -1,0 +1,50 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333333;
+      margin: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      color: #0066cc;
+      font-family: "Georgia", serif;
+    }
+    .primary span{
+      color: #0066cc;
+    }
+    .secondary span{
+      color:#009999;
+    }
+    .accent {
+      color: #009999; 
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    p{
+      text-align: center;
+    }
+    li{
+      width: 500px;
+      margin: 0 auto;
+      
+    }
+    .wireframes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    h1, h2, h3{
+      text-align: center;
+    }
+    .wireframe {
+      margin: 10px 0;
+      background-color: #ffffff;
+    }
+    footer{
+      background-color: #333333;
+      color: #ffffff;
+    }

@@ -1,0 +1,22 @@
+@media (min-width: 608px){
+.hamburger{
+        display: none;
+    }
+     header{
+        display: grid;
+        grid-template-columns: 44px auto;
+    }
+    .hamburger{
+        display: none;
+    }
+   .navigation{
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+    .navigation ul{
+        display: flex;
+    }
+    .navigation a{
+        border: none;
+    } 
+}

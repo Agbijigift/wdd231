@@ -1,0 +1,45 @@
+/************************************************************ hamburger ****************************************************/
+.hamburger{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.hamburger::before{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+    font-size: 2rem;
+}
+/************************************************* navigation ********************************************************/
+
+.navigation{
+    display: none;
+
+}
+.navigation.show{
+    display: block;
+
+}
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a{
+    display: block;
+    padding: .8rem 10px; 
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+.navigation li.current{
+    background-color: #eee;
+}
+.navigation a:hover{
+    background-color: rgb(80, 80, 153);
+}
