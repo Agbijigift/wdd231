@@ -3,7 +3,7 @@
   const visitorMessage = document.getElementById('visitorMessage');
   const DATA_URL = 'data/discover.json';
 
-  // fetch JSON data
+
   async function loadData() {
     const res = await fetch(DATA_URL);
     if (!res.ok) {
@@ -14,12 +14,11 @@
     return res.json();
   }
 
-  // build a card element from item
   function buildCard(item) {
     const card = document.createElement('article');
     card.className = `card area-${item.id}`;
 
-    // set the grid-area explicitly for safety
+
     card.style.gridArea = item.id;
 
     const figure = document.createElement('figure');
@@ -41,7 +40,7 @@
     btn.type = 'button';
     btn.textContent = 'Learn more';
     btn.addEventListener('click', () => {
-      // Example behavior: open the website in a new tab
+
       if (item.website) window.open(item.website, '_blank', 'noopener');
     });
 
@@ -54,7 +53,7 @@
     return card;
   }
 
-  // visitor message using localStorage
+ 
   function updateVisitorMessage() {
     const LAST_VISIT_KEY = 'chamber_last_visit';
     const now = Date.now();
@@ -73,14 +72,14 @@
       }
     }
 
-    // store current time for next visit
+   
     localStorage.setItem(LAST_VISIT_KEY, String(now));
   }
 
-  // main init
+
   const data = await loadData();
   if (Array.isArray(data) && data.length) {
-    // create and append cards in order of the JSON array
+   
     data.forEach(item => {
       const card = buildCard(item);
       grid.appendChild(card);
