@@ -1,0 +1,141 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.intro {
+  margin-bottom: 1rem;
+}
+
+
+.visitor-message {
+  background: #f5f5f8;
+  border-left: 4px solid #0066cc;
+  padding: 0.6rem 1rem;
+  margin-top: 0.6rem;
+  border-radius: 4px;
+}
+
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+*/
+.card h2 {
+  font-size: 1.05rem;
+  margin: 0.3rem 0;
+  
+}
+.card address {
+  font-style: normal;
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  flex: 1 1 auto;
+  margin-bottom: 0.6rem;
+}
+.card button {
+  align-self: start;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  border: none;
+  background: #3c5840;
+  color: white;
+  cursor: pointer;
+}
+
+
+.card figure {
+  margin: 0 0 0.6rem 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.card figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  transition: transform 240ms ease, filter 240ms ease;
+}
+
+
+
+@media (max-width: 640px) {
+  .discover-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h";
+  }
+
+ 
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+
+
+  .card figure img:hover {
+    transform: scale(1.03);
+    filter: brightness(0.95) saturate(1.05);
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a a b b"
+      "c d d e"
+      "f g h e";
+  }
+
+  .card figure img:hover {
+    transform: scale(1.06);
+    filter: brightness(0.92) saturate(1.08);
+  }
+}
+
+
+.area-a { grid-area: a; }
+.area-b { grid-area: b; }
+.area-c { grid-area: c; }
+.area-d { grid-area: d; }
+.area-e { grid-area: e; }
+.area-f { grid-area: f; }
+.area-g { grid-area: g; }
+.area-h { grid-area: h; }

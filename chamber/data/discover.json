@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a",
+    "name": "Calabar Carnival Museum",
+    "address": "9 Marina Rd, Calabar, Cross River",
+    "phone": "+234 809 000 1010",
+    "website": "https://calabarcarnivalmuseum.example",
+    "image": "calabar_carnival_museum.webp",
+    "description": "Museum celebrating the history and costumes of the Calabar Carnival — interactive exhibits and seasonal events."
+  },
+  {
+    "id": "b",
+    "name": "Tinapa Business and Leisure Resort",
+    "address": "Tinapa Free Zone, Calabar, Cross River",
+    "phone": "+234 817 123 4455",
+    "website": "https://tinapa.example",
+    "image": "tinapa_resort.webp",
+    "description": "Free trade zone and entertainment complex with shops, cinemas, and waterways — a modern business and leisure hub."
+  },
+  {
+    "id": "c",
+    "name": "Mary Slessor Heritage Site",
+    "address": "Mary Slessor Ave, Calabar, Cross River",
+    "phone": "+234 803 234 9901",
+    "website": "https://maryslessor.example",
+    "image": "mary_slessor.webp",
+    "description": "Historical site honoring missionary Mary Slessor with a small museum and garden overlooking the town."
+  },
+  {
+    "id": "d",
+    "name": "Kwa Falls Nature Park",
+    "address": "Kwa Falls Rd, Etung LGA, Cross River",
+    "phone": "+234 808 292 3004",
+    "website": "https://kwafalls.example",
+    "image": "kwa_falls.webp",
+    "description": "Scenic waterfalls and picnic areas, popular for short hikes and nature photography."
+  },
+  {
+    "id": "e",
+    "name": "Calabar Botanical Gardens",
+    "address": "Botanical Gardens, Murtala Mohammed Hwy, Calabar",
+    "phone": "+234 701 456 7788",
+    "website": "https://calabarbotanic.example",
+    "image": "botanical_gardens.webp",
+    "description": "A peaceful green space with native plants, walking paths, and shaded benches for visitors."
+  },
+  {
+    "id": "f",
+    "name": "Slave History Museum",
+    "address": "Old Trade House, Calabar Marina, Calabar",
+    "phone": "+234 803 567 2244",
+    "website": "https://slavehistory.example",
+    "image": "slave_history_museum.webp",
+    "description": "A reflective museum documenting local colonial history and the trans-Atlantic slave trade."
+  },
+  {
+    "id": "g",
+    "name": "Old Residency Museum",
+    "address": "Old Residency, Marina Rd, Calabar",
+    "phone": "+234 805 322 4410",
+    "website": "https://oldresidency.example",
+    "image": "old_residency.webp",
+    "description": "A restored colonial residence turned museum with period rooms and local exhibits."
+  },
+  {
+    "id": "h",
+    "name": "Marina Waterfront Park",
+    "address": "Calabar Marina, Calabar",
+    "phone": "+234 807 998 2233",
+    "website": "https://marinapark.example",
+    "image": "marina_park.webp",
+    "description": "Open waterfront park with promenades, food stalls, and evening cultural performances."
+  }
+]
